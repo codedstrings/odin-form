@@ -43,9 +43,15 @@ section {
     gap: 10px;
     font-weight: 100;
 }
-.odin-banner>h1{
+.odin-banner>h1>a{
+  text-decoration: none;
   font-size: 2rem;
   color: white;
+  border-bottom: 1px solid transparent; 
+  transition: border-bottom 0.3s ease;
+}
+.odin-banner>h1>a:hover{
+  border-bottom: 1px solid var(--opac-white)  ;
 }
 .footer{
 padding: 0 0 40px 0;
@@ -54,20 +60,17 @@ padding: 0 0 40px 0;
 .footer>a{
   text-decoration: none;
   cursor: pointer;
- 
-  transition: color 0.3s ease;
+  padding: 5px;
+  transition: background-color 0.3s ease;
 }
 .footer>a:hover{
-  color: var(--darky);
+  background-color: var(--darky);
+  padding: 5px;
 }
 
-.hero-text{
-  font-size: 2.5rem;
-  margin-top: 50px;
-  /* margin-bottom: -10 px; */
-  font-weight: 500;
-  color: white;
-}
+
+
+/* right section */
 .right-section {
   background-color: var(--darky);
   flex: 1.5;
@@ -78,6 +81,14 @@ padding: 0 0 40px 0;
   padding-right: 80px;
   padding-left: var(--left-padding);
 }
+.hero-text{
+  font-size: 2.5rem;
+  margin-top: 50px;
+  /* margin-bottom: -10 px; */
+  font-weight: 500;
+  color: white;
+}
+
 
 .all-input-wrapper{
   display: flex;
@@ -130,7 +141,7 @@ button{
   text-decoration: none;
   cursor: pointer;
   border-bottom: 1px solid transparent; 
-    transition: border-bottom 0.3s ease;
+  transition: border-bottom 0.3s ease;
 
 }
 .login-wrap>a:hover{
