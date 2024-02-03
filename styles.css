@@ -1,6 +1,5 @@
 :root {
   --green: rgb(33, 250, 131);
-  --red: rgb(252, 86, 108);
   --dusky-green: rgb(6, 170, 94);
   --opac-white: rgba(255, 255, 255, 0.8);
   --form-txt: rgba(255, 255, 255, 0.5);
@@ -70,7 +69,6 @@ padding: 0 0 40px 0;
   flex: 1.5;
   flex-direction: column;
   justify-content: space-evenly;
-  /* max-width: 100%; */
 }
 .hero-text,.form-wrapper,.login-wrap{
   padding-right: 80px;
@@ -92,7 +90,6 @@ form{
 .input-label{
   display: flex;
   flex-direction: column;
-  /* gap: 5px; */
   /* flex-basis 50% splits it to exaclty two sections */
   flex-basis: 45%;
   margin-bottom: 20px;
@@ -125,7 +122,10 @@ button{
   color: var(--dusky-green  );
   text-decoration: none;
   cursor: pointer;
+  border-bottom: 1px solid transparent; 
+    transition: border-bottom 0.3s ease;
+
 }
 .login-wrap>a:hover{
-  text-decoration: underline;
+  border-bottom: 1px solid var(--dusky-green);
 }
