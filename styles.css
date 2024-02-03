@@ -6,7 +6,7 @@
   --form-txt: rgba(255, 255, 255, 0.5);
   --darky: #1d2b3a;
   --light-grey: rgb(105, 105, 105);
-  --right-padding: 20px;
+  --left-padding: 100px;
 }
 * {
   box-sizing: border-box;
@@ -60,21 +60,72 @@ padding: 0 0 40px 0;
 .footer>a:hover{
   color: var(--darky);
 }
+
+.hero-text{
+  font-size: 2rem;
+  font-weight: 500;
+}
 .right-section {
   background-color: var(--darky);
   flex: 1.5;
   flex-direction: column;
   justify-content: space-evenly;
+  /* max-width: 100%; */
 }
 .hero-text,.form-wrapper,.login-wrap{
-  padding: var(--right-padding);
+  padding-right: 80px;
+  padding-left: var(--left-padding);
 }
 
+.all-input-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  /* space between two sides of content */
+  justify-content: space-between;
+  padding-right: 10px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.input-label{
+  display: flex;
+  flex-direction: column;
+  /* gap: 5px; */
+  /* flex-basis 50% splits it to exaclty two sections */
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
 
 label{
   text-transform: uppercase;
+  color: var(--opac-white);
 }
 input,button{
   background-color: var(--darky);
-  /* width: 20rem; */
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid rgb(0,0,0,.4);
+}
+button{
+  border-bottom: none;
+  background-color: var(--dusky-green);
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.login-wrap{
+  font-size: 1rem;
+  color: var(--opac-white);
+}
+.login-wrap>a{
+  color: var(--dusky-green  );
+  text-decoration: none;
+  cursor: pointer;
+}
+.login-wrap>a:hover{
+  text-decoration: underline;
 }
