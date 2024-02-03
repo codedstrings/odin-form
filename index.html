@@ -14,8 +14,8 @@
     <main>
       <section class="left-section">
         <div class="odin-banner">
-            <img src="assets/odin-lined.png" alt="odin-logo" width="40px" />
-            <h1>ODIN</h1>
+          <img src="assets/odin-lined.png" alt="odin-logo" width="40px" />
+          <h1>ODIN</h1>
         </div>
 
         <div class="image-wrapper">
@@ -26,13 +26,80 @@
           />
         </div>
         <div class="footer">
-          copyright &copy; 2024 | 
+          copyright &copy; 2024 |
           <a href="https://github.com/codedstrings">
             codedstrings <i class="fa fa-github" style="font-size: 15px"></i
           ></a>
         </div>
       </section>
-      <section class="right-section"></section>
+      <section class="right-section">
+        <div class="hero-text">Get started</div>
+        <div class="form-wrapper">
+          <form action="#" method="post">
+            <div class="all-input-wrapper">
+                <div class="input-wrapper">
+                  <label for="first-name">*First Name</label>
+                  <input
+                    required
+                    type="text"
+                    class="input"
+                    id="first-name"
+                    name="first-name"
+                    placeholder="Thor"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    class="input"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Odinson"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="email">*Email</label>
+                  <input
+                    required
+                    type="email"
+                    class="input"
+                    id="email"
+                    name="email"
+                    placeholder="name@email.com"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="phone">*Phone No.</label>
+                  <input
+                    required
+                    type="tel"
+                    class="input"
+                    name="phone"
+                    placeholder="10-digit phone number"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="password">*Create password</label>
+                  <input required type="password" class="input" name="password" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="conf-password">*Confirm password</label>
+                  <input
+                    required
+                    type="password"
+                    class="input"
+                    name="conf-password"
+                  />
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+          </form>
+        </div>
+        <div class="login-wrap">
+          Already have an account..? <a href="#" class="login">LOG IN</a>
+        </div>
+      </section>
     </main>
   </body>
 </html>

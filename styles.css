@@ -6,6 +6,7 @@
   --form-txt: rgba(255, 255, 255, 0.5);
   --darky: #1d2b3a;
   --light-grey: rgb(105, 105, 105);
+  --right-padding: 20px;
 }
 * {
   box-sizing: border-box;
@@ -62,4 +63,18 @@ padding: 0 0 40px 0;
 .right-section {
   background-color: var(--darky);
   flex: 1.5;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hero-text,.form-wrapper,.login-wrap{
+  padding: var(--right-padding);
+}
+
+
+label{
+  text-transform: uppercase;
+}
+input,button{
+  background-color: var(--darky);
+  /* width: 20rem; */
 }
