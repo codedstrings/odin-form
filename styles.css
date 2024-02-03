@@ -36,15 +36,15 @@ section {
 
 .odin-banner{
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     /* for centering logo and text */
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     font-weight: 100;
 }
 .odin-banner>h1{
-  font-size: 1.9rem;
+  font-size: 2rem;
   color: white;
 }
 .footer{
